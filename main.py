@@ -1,7 +1,6 @@
 import sys
 try:
     size = int(input('->'))
-    size += 1
 
     for i in range(size):
         for j in range(size):

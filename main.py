@@ -1,22 +1,14 @@
+import sys
 try:
     size = int(input('->'))
     size += 1
 
     for i in range(size):
         for j in range(size):
-            if i == 0:
-                print('i0', end='')
+            if i == 0 or j == 0 or i == size-1 or j == size-1:
+                sys.stdout.write('*')
             else:
-                if j == {size}:
-                    print('js', end='')
-                else:
-                    if j == 0:
-                        print('\nj0')
-                    else:
-                        if i == {size}:
-                            print('is', end='')
-                        else:
-                            print('')
-    print()
+                sys.stdout.write(' ')
+        print(' ')
 except Exception as ex:
     print(f'Error: {ex}')

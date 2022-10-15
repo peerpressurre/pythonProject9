@@ -1,6 +1,7 @@
-size = int(input('->'))
+height = int(input('->'))
+length = int(input('->'))
 
-for i in range(size):
-    for j in range(size):
+for i in range(height):
+    for j in range(length):
         print('*', end='')
     print()
